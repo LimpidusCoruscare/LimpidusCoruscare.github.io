@@ -31,9 +31,10 @@ export function getAllPosts() {
       // gray-matter를 사용하여 post 메타데이터 파싱
       const matterResult = matter(fileContents);
 
-      // 데이터와 ID 결합
+      // 데이터와 ID 결합 (content 추가)
       return {
         id,
+        content: matterResult.content, // 검색을 위한 마크다운 콘텐츠 추가
         ...matterResult.data
       };
     })

@@ -18,16 +18,6 @@ function addCopyButtons() {
     codeBlock.prepend(controlsContainer);
 
     // 코드 텍스트 추출 (라인 넘버 제외)
-    // const code = Array.from(codeBlock.querySelectorAll('.token-line'))
-    //     .map(line => {
-    //         // .linenumber 클래스를 가진 요소 제외
-    //         const lineContent = Array.from(line.childNodes)
-    //             .filter(node => !node.classList || !node.classList.contains('linenumber'))
-    //             .map(node => node.textContent)
-    //             .join('');
-    //         return lineContent;
-    //     })
-    //     .join('\n');
     const extractCode = (element) => {
       // 방법 1: code 요소가 직접 있는 경우
       const codeElement = element.querySelector('code');
