@@ -19,7 +19,7 @@
 
 ## 🚀 Live Demo
 
-Visit the live blog: [https://limpcoru.github.io](https://limpcoru.github.io)
+Visit the live blog: [https://LimpidusCoruscare.github.io](https://LimpidusCoruscare.github.io)
 
 ## 💻 Tech Stack
 

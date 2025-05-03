@@ -44,8 +44,8 @@ export default function Post({ post, relatedPosts }) {
             <meta property="og:title" content={post.title} />
             <meta property="og:description" content={post.excerpt || `Post: ${post.title}`} />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content={`https://limpcoru.github.io/blog/${post.id}`} />
-            {post.coverImage && <meta property="og:image" content={post.coverImage || 'https://limpcoru.github.io/images/blog-cover.png'} />}
+            <meta property="og:url" content={`https://LimpidusCoruscare.github.io/blog/${post.id}`} />
+            {post.coverImage && <meta property="og:image" content={post.coverImage || 'https://LimpidusCoruscare.github.io/images/blog-cover.png'} />}
             <meta property="og:site_name" content="Blog of LimpidusCoruscans" />
             {post.date && <meta property="article:published_time" content={new Date(post.date).toISOString()} />}
             {post.tags?.map((tag, index) => (
@@ -56,11 +56,11 @@ export default function Post({ post, relatedPosts }) {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={post.title} />
             <meta name="twitter:description" content={post.excerpt || `Post: ${post.title}`} />
-            {post.coverImage && <meta name="twitter:image" content={post.coverImage || 'https://limpcoru.github.io/images/blog-cover.png'} />}
+            {post.coverImage && <meta name="twitter:image" content={post.coverImage || 'https://LimpidusCoruscare.github.io/images/blog-cover.png'} />}
 
             {/* 표준 메타 태그 */}
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="canonical" href={`https://limpcoru.github.io/blog/${post.id}`} />
+            <link rel="canonical" href={`https://LimpidusCoruscare.github.io/blog/${post.id}`} />
           </Head>
 
           {/* CodeBlock 컴포넌트 추가 - 이것이 코드 블록에 복사 버튼을 추가합니다 */}

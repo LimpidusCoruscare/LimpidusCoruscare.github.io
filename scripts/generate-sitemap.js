@@ -38,7 +38,7 @@ const getAllTagsForSitemap = async () => {
 };
 
 (async () => {
-  const baseUrl = 'https://limpcoru.github.io'; // 실제 도메인으로 변경
+  const baseUrl = 'https://LimpidusCoruscare.github.io'; // 실제 도메인으로 변경
 
   console.log('Sitemap genration started...');
 

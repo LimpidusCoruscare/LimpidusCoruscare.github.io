@@ -18,8 +18,8 @@ export default function About() {
         <meta property="og:title" content="About | LimpidusCoruscans Tech Blog" />
         <meta property="og:description" content="Get to know more about LimpidusCoruscans, the author of this tech blog focused on web development and programming." />
         <meta property="og:type" content="profile" />
-        <meta property="og:url" content="https://limpcoru.github.io/about" />
-        <meta property="og:image" content="https://limpcoru.github.io/images/blog-cover.png" />
+        <meta property="og:url" content="https://LimpidusCoruscare.github.io/about" />
+        <meta property="og:image" content="https://LimpidusCoruscare.github.io/images/blog-cover.png" />
         <meta property="og:site_name" content="LimpidusCoruscans Tech Blog" />
         <meta property="profile:username" content="LimpidusCoruscans" />
 
@@ -27,11 +27,11 @@ export default function About() {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About | LimpidusCoruscans Tech Blog" />
         <meta name="twitter:description" content="Get to know more about LimpidusCoruscans, the author of this tech blog focused on web development and programming." />
-        <meta name="twitter:image" content="https://limpcoru.github.io/images/blog-cover.png" />
+        <meta name="twitter:image" content="https://LimpidusCoruscare.github.io/images/blog-cover.png" />
 
         {/* 표준 메타 태그 */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://limpcoru.github.io/about" />
+        <link rel="canonical" href="https://LimpidusCoruscare.github.io/about" />
       </Head>
       <Card
         sx={{

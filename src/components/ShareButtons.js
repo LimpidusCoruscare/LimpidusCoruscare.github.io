@@ -4,7 +4,7 @@ import { Link as LinkIcon } from '@mui/icons-material';
 import copy from 'copy-to-clipboard';
 
 export default function ShareButtons({ title, slug }) {
-  const baseUrl = 'https://limpcoru.github.io';
+  const baseUrl = 'https://LimpidusCoruscare.github.io';
   const url = `${baseUrl}/blog/${slug}`;
 
   const copyToClipboard = () => {

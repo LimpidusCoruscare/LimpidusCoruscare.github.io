@@ -19,19 +19,19 @@ export default function Home({ posts }) {
         <meta property="og:title" content="LimpidusCoruscans | Web Development and Programming Tech Blog" />
         <meta property="og:description" content="A blog about web development, programming, and technology trends." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://limpcoru.github.io" />
-        <meta property="og:image" content="https://limpcoru.github.io/images/blog-cover.png" />
+        <meta property="og:url" content="https://LimpidusCoruscare.github.io" />
+        <meta property="og:image" content="https://LimpidusCoruscare.github.io/images/blog-cover.png" />
         <meta property="og:site_name" content="LimpidusCoruscans Tech Blog" />
 
         {/* Twitter 카드 태그 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="LimpidusCoruscans | Web Development and Programming Tech Blog" />
         <meta name="twitter:description" content="A blog about web development, programming, and technology trends." />
-        <meta name="twitter:image" content="https://limpcoru.github.io/images/blog-cover.png" />
+        <meta name="twitter:image" content="https://LimpidusCoruscare.github.io/images/blog-cover.png" />
 
         {/* 표준 메타 태그 */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://limpcoru.github.io" />
+        <link rel="canonical" href="https://LimpidusCoruscare.github.io" />
       </Head>
       <Box sx={{ mt: 2, mb: 6 }}>
         <Typography

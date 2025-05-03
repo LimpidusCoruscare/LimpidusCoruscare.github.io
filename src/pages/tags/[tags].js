@@ -32,19 +32,19 @@ export default function TagPage({ tag, posts }) {
         <meta property="og:title" content={`${tag} Related Posts | LimpidusCoruscans Tech Blog`} />
         <meta property="og:description" content={`A collection of blog posts related to the ${tag} tag. Explore posts about ${tag} from LimpidusCoruscans.`} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://limpcoru.github.io/tags/${tag}`} />
-        <meta property="og:image" content="https://limpcoru.github.io/tags.svg" />
+        <meta property="og:url" content={`https://LimpidusCoruscare.github.io/tags/${tag}`} />
+        <meta property="og:image" content="https://LimpidusCoruscare.github.io/tags.svg" />
         <meta property="og:site_name" content="LimpidusCoruscans Tech Blog" />
 
         {/* Twitter 카드 태그 */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={`${tag} Related Posts | LimpidusCoruscans Tech Blog`} />
         <meta name="twitter:description" content={`A collection of blog posts related to the ${tag} tag. Explore posts about ${tag} from LimpidusCoruscans.`} />
-        <meta name="twitter:image" content="https://limpcoru.github.io/tags.svg" />
+        <meta name="twitter:image" content="https://LimpidusCoruscare.github.io/tags.svg" />
 
         {/* 표준 메타 태그 */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={`https://limpcoru.github.io/tags/${tag}`} />
+        <link rel="canonical" href={`https://LimpidusCoruscare.github.io/tags/${tag}`} />
       </Head>
 
       <Box sx={{ mt: 2, mb: 6 }}>
