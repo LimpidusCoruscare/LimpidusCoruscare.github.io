@@ -1,6 +1,32 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light;
+}
+
+/* next-themes 다크 모드 클래스와 호환 */
+:root.dark, html.dark {
+  --background: #121212;
+  --foreground: #ededed;
+  color-scheme: dark;
+}
+
+/* 테마 전환시 부드러운 애니메이션 (초기 로딩이 끝난 후) */
+.theme-ready body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: #121212;
+  color: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    color-scheme: dark;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,8 +61,134 @@ a {
   text-decoration: none;
 }
 
+/* 마크다운 콘텐츠 스타일링 */
+.markdown-content h1{
+  margin-bottom: 0.5em; /* 제목과 단락 간 간격 */
+}
+.markdown-content h2 {
+  margin-bottom: 0.35em; /* 제목과 단락 간 간격 */
+}
+.markdown-content h3 {
+  margin-bottom: 0.3em; /* 제목과 단락 간 간격 */
+}
+
+.markdown-content p {
+  margin-bottom: 1.5em; /* 단락 간 간격 늘림 */
+}
+
+.markdown-content p + p {
+  margin-top: 1em; /* 연속된 단락 사이 추가 공간 */
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-left: 1.0em; /* 리스트 번호가 튀어나오지 않는 간격 */
+  margin-bottom: 1.5em; /* 리스트와 단락 간 간격 */
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Prism.js 코드 블록 스타일링 */
+pre[class*="language-"] {
+  position: relative;
+  margin: 1.5em 0;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.code-line {
+  font-family: 'D2Coding', 'Courier New', Courier, monospace;
+}
+
+/* 다크 모드에서 더 어두운 그림자 */
+[class*="theme-dark"] pre[class*="language-"] {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 코드 블록 컨트롤 컨테이너 - 스크롤에 영향받지 않는 헤더 영역 */
+.code-controls-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: rgba(45, 45, 45, 0.8); /* 약간 어두운 반투명 배경 */
+  backdrop-filter: blur(4px); /* 블러 효과 (모던 브라우저) */
+  z-index: 10;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* 언어 라벨 */
+.code-language-label {
+  position: static;
+  margin-right: auto; /* 왼쪽 정렬 */
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* 코드 블록 복사 버튼 */
+.code-copy-button {
+  position: static;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+/* pre[class*="language-"]:hover .code-copy-button {
+  opacity: 1;
+} */
+
+.code-copy-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 코드 내용은 헤더 아래에 표시 */
+pre[class*="language-"] > code {
+  margin-top: 8px;
+  display: block;
+}
+
+/* 라인 넘버 스타일링 */
+.linenumber {
+  user-select: none;
+  opacity: 0.5;
+  text-align: right;
+  min-width: 2.5em;
+  display: inline-block;
+  padding-right: 1em;
+  margin-right: 1em;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 토큰 라인 - 전체 라인을 감싸는 요소 */
+.token-line {
+  display: block;
+  line-height: 1.6;
+}
+
+/* 줄 번호 스타일 */
+.line-number::before {
+  display: inline-block;
+  width: 1rem;
+  text-align: right;
+  margin-right: 16px;
+  margin-left: -8px;
+  color: rgb(156, 163, 175); /* Line number color */
+  content: attr(line);
 }
