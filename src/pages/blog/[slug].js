@@ -8,6 +8,7 @@ import TableOfContents from '@/components/TableOfContents';
 import AuthorBio from '@/components/AuthorBio';
 import RelatedPosts from '@/components/RelatedPosts';
 import CodeBlock from '@/components/CodeBlock'; // 코드 블록 컴포넌트 추가
+import GiscusComments from '@/components/GiscusComments';
 
 export default function Post({ post, relatedPosts }) {
   const router = useRouter();
@@ -174,6 +175,9 @@ export default function Post({ post, relatedPosts }) {
             {relatedPosts.length > 0 && (
               <RelatedPosts posts={relatedPosts} />
             )}
+
+            {/* 댓글 섹션 */}
+            <GiscusComments slug={post.id} />
           </Box>
         </>
       )}

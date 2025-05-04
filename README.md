@@ -85,7 +85,7 @@ module.exports = {
 
 ## 🔮 Future Improvements
 
-- [ ] Implement comments system
+- [x] Implement comments system
 - [ ] Add view count statistics
 - [ ] Refactor with TypeScript
 
